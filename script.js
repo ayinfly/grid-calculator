@@ -34,13 +34,19 @@ function key(num) {
 function operator(op) {
     cache = val;
     opr = op;
-    key('null')
+    key('null');
 }
 
 function eq() {
-    if (opr = '÷') {
-        cache = cache / val
-        val = cache
-        update()
+    if (opr == '÷') {
+        cache = cache / val;
+    } else if (opr == '×') {
+        cache = cache * val;
+    } else if (opr == '-') {
+        cache = cache - val;
+    } else if (opr == '+') {
+        cache = cache + val;
     }
+    val = cache;
+    update();
 }
