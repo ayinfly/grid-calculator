@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="keys">
-        <p class="box">0</p>
+        <p id="box">0</p>
         <button class="func">C</button>
         <button class="func">+/-</button>
         <button class="func">%</button>
         <button class="op">÷</button>
-        <button class="num">7</button>
+        <button class="num" onclick="number(7)">7</button>
         <button class="num">8</button>
         <button class="num">9</button>
         <button class="op">×</button>
@@ -31,5 +30,7 @@
         <button class="num">.</button>
         <button class="op">=</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
     border-radius: 5px;
 }
 
-.box {
+#box {
     font-size: 75px;
     grid-area: 1 / 1 / 2 / 5;
     place-self: center end;
