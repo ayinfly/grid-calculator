@@ -39,13 +39,13 @@ function operator(op) {
 
 function eq() {
     if (opr == '÷') {
-        cache = cache / val;
+        cache = (+cache / +val).toString();
     } else if (opr == '×') {
-        cache = cache * val;
+        cache = (+cache * +val).toString();
     } else if (opr == '-') {
-        cache = cache - val;
+        cache = (+cache - +val).toString();
     } else if (opr == '+') {
-        cache = cache + val;
+        cache = (+cache + +val).toString();
     }
     val = cache;
     update();
