@@ -2,6 +2,8 @@ const box = document.getElementById('box');
 let val = "0";
 let clr = false;
 let dot = false;
+let opr = null;
+let cache = null;
 
 function update() {
     box.textContent = val;
@@ -27,4 +29,18 @@ function key(num) {
         val += num;
     }
     update();
+}
+
+function operator(op) {
+    cache = val;
+    opr = op;
+    key('null')
+}
+
+function eq() {
+    if (opr = '÷') {
+        cache = cache / val
+        val = cache
+        update()
+    }
 }
