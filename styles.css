@@ -1,18 +1,27 @@
+* {
+    font-size: 50px;
+    font-family: monospace;
+}
+
 .keys {
     display: grid;
-    grid-template: repeat(5, 100px) / repeat(4, 100px);
+    grid-template: repeat(6, 100px) / repeat(4, 100px);
     place-content: center;
     gap: 1px 1px;
 }
 
 .keys button {
-    font-size: 50px;
-    font-family: monospace;
     border-radius: 5px;
 }
 
+.box {
+    font-size: 75px;
+    grid-area: 1 / 1 / 2 / 5;
+    place-self: center end;
+}
+
 .num {
-    background-color: rgb(128, 128, 128)
+    background-color: gray
 }
 
 .op {
