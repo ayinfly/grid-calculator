@@ -1,11 +1,22 @@
-.nums {
+.keys {
     display: grid;
     grid-template: repeat(5, 100px) / repeat(4, 100px);
     place-content: center;
+    gap: 1px 1px;
+}
+
+.keys button {
+    font-size: 50px;
+    font-family: monospace;
+    border-radius: 5px;
 }
 
 .num {
-    font-size: 50px;
+    background-color: rgb(128, 128, 128)
+}
+
+.op {
+    background-color: orange;
 }
 
 .zero {
