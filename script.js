@@ -5,9 +5,13 @@ function update() {
     box.textContent = val;
 }
 
-function number(num) {
-    if (num == null) {
-        val = "0";  
+function key(num) {
+    if (num == 'null') {
+        val = "0";
+    } else if (num == 'dec') {
+        val = (+val / 100).toString();
+    } else if (num == 'neg') {
+        val = (0 - +val).toString();
     } else if (val == "0") {
         val = num.toString();
     } else {
